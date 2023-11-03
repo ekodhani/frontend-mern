@@ -12,6 +12,7 @@ import axios from "axios";
 import NotFound from "./pages/NotFound";
 import Profile from "./pages/Profile";
 import ChangePassword from "./pages/ChangesPassword";
+import Animasi from "./pages/Animasi";
 
 function App() {
   const [authState, setAuthState] = useState({
@@ -66,6 +67,7 @@ function App() {
                   <Link to="/createpost">Create Post</Link>
                 </>
               )}
+              <Link to="/reactspring">Test React Spring</Link>
             </div>
             <div className="loggedInContainer">
               <h3>{authState.username}</h3>
@@ -83,6 +85,7 @@ function App() {
             <Route path="/login" component={Login} />
             <Route path="/profile/:id" component={Profile} />
             <Route path="/changepassword" component={ChangePassword} />
+            <Route path="/reactspring" component={Animasi} />
             <Route path="*" component={NotFound} />
           </Switch>
         </Router>
