@@ -34,7 +34,7 @@ function Login() {
 
   return (
     <form onSubmit={(e) => LoginProcess(e)}>
-      <div className="loginContainer">
+      <div className="loginBox">
         <label>Username</label>
         <input
           type="text"
