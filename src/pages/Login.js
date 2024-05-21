@@ -18,7 +18,7 @@ function Login() {
         alert(response.data.error);
       } else {
         console.log(response.data); // muncul data
-        alert(response.data.message); // pesan muncul dalam bentuk alert
+        // alert(response.data.message); // pesan muncul dalam bentuk alert
         // menyimpan token kedalam local storage (sessions, cookies, dll)
         localStorage.setItem("accessToken", response.data.accessToken);
         setAuthState({
