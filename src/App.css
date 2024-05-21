@@ -247,7 +247,7 @@ button {
 }
 
 /* LOGIN */
-.loginContainer {
+.loginBox {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -256,7 +256,7 @@ button {
   padding-top: 100px;
 }
 
-.loginContainer input,
+.loginBox input,
 button {
   width: 400px;
   height: 50px;
@@ -265,12 +265,12 @@ button {
   margin: 10px;
 }
 
-.loginContainer button {
+.loginBox button {
   background-color: rgb(30, 97, 165);
   color: white;
 }
 
-.loginContainer input {
+.loginBox input {
   border: 2px solid rgb(30, 97, 165);
 }
 
